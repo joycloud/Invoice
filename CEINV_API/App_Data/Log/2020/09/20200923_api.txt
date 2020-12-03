@@ -1,0 +1,72 @@
+===========================Invalid[09:55:59]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>Invalid
+ [api_params]: 
+[{"InvoiceNumber":"CB00006019","InvoiceDate":"20200901"},{"InvoiceNumber":"CB00006020","InvoiceDate":"20200904"}]
+
+===========================Invalid[15:04:10]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>Invalid
+ [api_params]: 
+[{"InvoiceNumber":"CB00006019","InvoiceDate":"2020-09-01"},{"InvoiceNumber":"CB00006020","InvoiceDate":"2020-09-04"}]
+
+===========================Invalid[15:04:25]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>Invalid
+ [api_params]: 
+[{"InvoiceNumber":"CB00006019","InvoiceDate":"2020-09-01"},{"InvoiceNumber":"CB00006020","InvoiceDate":"2020-09-04"}]
+
+===========================Invalid[15:04:45]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>Invalid
+ [api_params]: 
+[{"InvoiceNumber":"CB00006019","InvoiceDate":"20200901"},{"InvoiceNumber":"CB00006020","InvoiceDate":"20200904"}]
+
+===========================Invalid[15:12:51]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>Invalid
+ [api_params]: 
+[{"InvoiceNumber":"CB00006019","InvoiceDate":"20200901"},{"InvoiceNumber":"CB00006020","InvoiceDate":"20200904"}]
+
+===========================Invalid[15:13:30]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>Invalid
+ [api_params]: 
+[{"InvoiceNumber":"CB00006019","InvoiceDate":"20200901"},{"InvoiceNumber":"CB00006020","InvoiceDate":"20200904"}]
+
+===========================Invalid[15:16:19]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>Invalid
+ [api_params]: 
+[{"InvoiceNumber":"CB00006019","InvoiceDate":"20200901"},{"InvoiceNumber":"CB00006020","InvoiceDate":"20200904"}]
+
+===========================Invalid[15:17:51]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>Invalid
+ [api_params]: 
+[{"InvoiceNumber":"CB00006019","InvoiceDate":"20200901"},{"InvoiceNumber":"CB00006020","InvoiceDate":"20200904"}]
+
+===========================Invalid[15:18:39]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>Invalid
+ [api_params]: 
+[{"InvoiceNumber":"CB00006019","InvoiceDate":"20200901"},{"InvoiceNumber":"CB00006020","InvoiceDate":"20200904"}]
+
+===========================Invalid[15:26:54]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>Invalid
+ [api_params]: 
+[{"InvoiceNumber":"CB00006019","InvoiceDate":"20200901"},{"InvoiceNumber":"CB00006020","InvoiceDate":"20200904"}]
+
+===========================Invalid[17:55:18]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>Invalid
+ [api_params]: 
+[{"InvoiceNumber":"CB00006019","InvoiceDate":"20200901"},{"InvoiceNumber":"CB00006020","InvoiceDate":"20200904"}]
+
+===========================Invalid[17:58:01]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>Invalid
+ [api_params]: 
+[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]
+

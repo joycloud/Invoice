@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="einvoiceModelStoreContainer" CdmEntityContainer="einvoiceEntities">
+    <EntitySetMapping Name="EI_BAS_COMPANY">
+      <EntityTypeMapping TypeName="einvoiceModel.EI_BAS_COMPANY">
+        <MappingFragment StoreEntitySet="EI_BAS_COMPANY">
+          <ScalarProperty Name="tax_number" ColumnName="tax_number" />
+          <ScalarProperty Name="comp_name" ColumnName="comp_name" />
+          <ScalarProperty Name="comp_sname" ColumnName="comp_sname" />
+          <ScalarProperty Name="comp_person" ColumnName="comp_person" />
+          <ScalarProperty Name="comp_tel" ColumnName="comp_tel" />
+          <ScalarProperty Name="comp_fax" ColumnName="comp_fax" />
+          <ScalarProperty Name="comp_address" ColumnName="comp_address" />
+          <ScalarProperty Name="comp_email" ColumnName="comp_email" />
+          <ScalarProperty Name="cons_notice" ColumnName="cons_notice" />
+          <ScalarProperty Name="lock_up_inv" ColumnName="lock_up_inv" />
+          <ScalarProperty Name="seed_password" ColumnName="seed_password" />
+          <ScalarProperty Name="aes_key" ColumnName="aes_key" />
+          <ScalarProperty Name="logo_image" ColumnName="logo_image" />
+          <ScalarProperty Name="invoice_image" ColumnName="invoice_image" />
+          <ScalarProperty Name="cont_person" ColumnName="cont_person" />
+          <ScalarProperty Name="cont_phone" ColumnName="cont_phone" />
+          <ScalarProperty Name="cont_email" ColumnName="cont_email" />
+          <ScalarProperty Name="add_dt" ColumnName="add_dt" />
+          <ScalarProperty Name="add_user" ColumnName="add_user" />
+          <ScalarProperty Name="modify_dt" ColumnName="modify_dt" />
+          <ScalarProperty Name="modify_user" ColumnName="modify_user" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EI_BRC_DETAILDATA">
+      <EntityTypeMapping TypeName="einvoiceModel.EI_BRC_DETAILDATA">
+        <MappingFragment StoreEntitySet="EI_BRC_DETAILDATA">
+          <ScalarProperty Name="tax_number" ColumnName="tax_number" />
+          <ScalarProperty Name="yearmonth" ColumnName="yearmonth" />
+          <ScalarProperty Name="branch_id" ColumnName="branch_id" />
+          <ScalarProperty Name="seq_no" ColumnName="seq_no" />
+          <ScalarProperty Name="branch_tax_no" ColumnName="branch_tax_no" />
+          <ScalarProperty Name="header" ColumnName="header" />
+          <ScalarProperty Name="begin_no" ColumnName="begin_no" />
+          <ScalarProperty Name="end_no" ColumnName="end_no" />
+          <ScalarProperty Name="booklet" ColumnName="booklet" />
+          <ScalarProperty Name="inv_type" ColumnName="inv_type" />
+          <ScalarProperty Name="add_dt" ColumnName="add_dt" />
+          <ScalarProperty Name="add_user" ColumnName="add_user" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EI_BRC_MASTERDATA">
+      <EntityTypeMapping TypeName="einvoiceModel.EI_BRC_MASTERDATA">
+        <MappingFragment StoreEntitySet="EI_BRC_MASTERDATA">
+          <ScalarProperty Name="tax_number" ColumnName="tax_number" />
+          <ScalarProperty Name="yearmonth" ColumnName="yearmonth" />
+          <ScalarProperty Name="header" ColumnName="header" />
+          <ScalarProperty Name="begin_no" ColumnName="begin_no" />
+          <ScalarProperty Name="end_no" ColumnName="end_no" />
+          <ScalarProperty Name="inv_type" ColumnName="inv_type" />
+          <ScalarProperty Name="add_dt" ColumnName="add_dt" />
+          <ScalarProperty Name="add_user" ColumnName="add_user" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EI_DIS_DETAILDATA">
+      <EntityTypeMapping TypeName="einvoiceModel.EI_DIS_DETAILDATA">
+        <MappingFragment StoreEntitySet="EI_DIS_DETAILDATA">
+          <ScalarProperty Name="tax_number" ColumnName="tax_number" />
+          <ScalarProperty Name="dis_no" ColumnName="dis_no" />
+          <ScalarProperty Name="seq_no" ColumnName="seq_no" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="unit_price" ColumnName="unit_price" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="tax" ColumnName="tax" />
+          <ScalarProperty Name="tax_type" ColumnName="tax_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EI_DIS_MASTERDATA">
+      <EntityTypeMapping TypeName="einvoiceModel.EI_DIS_MASTERDATA">
+        <MappingFragment StoreEntitySet="EI_DIS_MASTERDATA">
+          <ScalarProperty Name="tax_number" ColumnName="tax_number" />
+          <ScalarProperty Name="dis_no" ColumnName="dis_no" />
+          <ScalarProperty Name="dis_date" ColumnName="dis_date" />
+          <ScalarProperty Name="inv_no" ColumnName="inv_no" />
+          <ScalarProperty Name="inv_date" ColumnName="inv_date" />
+          <ScalarProperty Name="dis_kind" ColumnName="dis_kind" />
+          <ScalarProperty Name="dis_type" ColumnName="dis_type" />
+          <ScalarProperty Name="dis_status" ColumnName="dis_status" />
+          <ScalarProperty Name="is_mailed" ColumnName="is_mailed" />
+          <ScalarProperty Name="batch_no" ColumnName="batch_no" />
+          <ScalarProperty Name="tax_amt" ColumnName="tax_amt" />
+          <ScalarProperty Name="total_amt" ColumnName="total_amt" />
+          <ScalarProperty Name="buy_id" ColumnName="buy_id" />
+          <ScalarProperty Name="buy_name" ColumnName="buy_name" />
+          <ScalarProperty Name="buy_address" ColumnName="buy_address" />
+          <ScalarProperty Name="buy_phone" ColumnName="buy_phone" />
+          <ScalarProperty Name="buy_mail" ColumnName="buy_mail" />
+          <ScalarProperty Name="add_dt" ColumnName="add_dt" />
+          <ScalarProperty Name="add_user" ColumnName="add_user" />
+          <ScalarProperty Name="cancel_date" ColumnName="cancel_date" />
+          <ScalarProperty Name="cancel_time" ColumnName="cancel_time" />
+          <ScalarProperty Name="cancel_reason" ColumnName="cancel_reason" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EI_DIS_MESSAGEQUEUE">
+      <EntityTypeMapping TypeName="einvoiceModel.EI_DIS_MESSAGEQUEUE">
+        <MappingFragment StoreEntitySet="EI_DIS_MESSAGEQUEUE">
+          <ScalarProperty Name="seq_no" ColumnName="seq_no" />
+          <ScalarProperty Name="msg_kind" ColumnName="msg_kind" />
+          <ScalarProperty Name="send_id" ColumnName="send_id" />
+          <ScalarProperty Name="recv_id" ColumnName="recv_id" />
+          <ScalarProperty Name="dis_no" ColumnName="dis_no" />
+          <ScalarProperty Name="add_dt" ColumnName="add_dt" />
+          <ScalarProperty Name="send_dt" ColumnName="send_dt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EI_DIS_PROCESSLOG">
+      <EntityTypeMapping TypeName="einvoiceModel.EI_DIS_PROCESSLOG">
+        <MappingFragment StoreEntitySet="EI_DIS_PROCESSLOG">
+          <ScalarProperty Name="seq_no" ColumnName="seq_no" />
+          <ScalarProperty Name="tax_number" ColumnName="tax_number" />
+          <ScalarProperty Name="dis_no" ColumnName="dis_no" />
+          <ScalarProperty Name="add_dt" ColumnName="add_dt" />
+          <ScalarProperty Name="proc_remark" ColumnName="proc_remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EI_ERR_MESSAGE">
+      <EntityTypeMapping TypeName="einvoiceModel.EI_ERR_MESSAGE">
+        <MappingFragment StoreEntitySet="EI_ERR_MESSAGE">
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EI_INV_DETAILDATA">
+      <EntityTypeMapping TypeName="einvoiceModel.EI_INV_DETAILDATA">
+        <MappingFragment StoreEntitySet="EI_INV_DETAILDATA">
+          <ScalarProperty Name="tax_type" ColumnName="tax_type" />
+          <ScalarProperty Name="tax" ColumnName="tax" />
+          <ScalarProperty Name="tax_number" ColumnName="tax_number" />
+          <ScalarProperty Name="inv_no" ColumnName="inv_no" />
+          <ScalarProperty Name="seq_no" ColumnName="seq_no" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="unit_price" ColumnName="unit_price" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="detail_remark" ColumnName="detail_remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EI_INV_MASTERDATA">
+      <EntityTypeMapping TypeName="einvoiceModel.EI_INV_MASTERDATA">
+        <MappingFragment StoreEntitySet="EI_INV_MASTERDATA">
+          <ScalarProperty Name="inv_class" ColumnName="inv_class" />
+          <ScalarProperty Name="tax_number" ColumnName="tax_number" />
+          <ScalarProperty Name="inv_no" ColumnName="inv_no" />
+          <ScalarProperty Name="inv_date" ColumnName="inv_date" />
+          <ScalarProperty Name="inv_time" ColumnName="inv_time" />
+          <ScalarProperty Name="inv_type" ColumnName="inv_type" />
+          <ScalarProperty Name="inv_status" ColumnName="inv_status" />
+          <ScalarProperty Name="is_mailed" ColumnName="is_mailed" />
+          <ScalarProperty Name="batch_no" ColumnName="batch_no" />
+          <ScalarProperty Name="serial_no" ColumnName="serial_no" />
+          <ScalarProperty Name="random_no" ColumnName="random_no" />
+          <ScalarProperty Name="tax_type" ColumnName="tax_type" />
+          <ScalarProperty Name="tax_rate" ColumnName="tax_rate" />
+          <ScalarProperty Name="tax_amt" ColumnName="tax_amt" />
+          <ScalarProperty Name="taxable_amt" ColumnName="taxable_amt" />
+          <ScalarProperty Name="freetax_amt" ColumnName="freetax_amt" />
+          <ScalarProperty Name="zerotax_amt" ColumnName="zerotax_amt" />
+          <ScalarProperty Name="total_amt" ColumnName="total_amt" />
+          <ScalarProperty Name="print_flag" ColumnName="print_flag" />
+          <ScalarProperty Name="pass_way" ColumnName="pass_way" />
+          <ScalarProperty Name="buy_id" ColumnName="buy_id" />
+          <ScalarProperty Name="buy_name" ColumnName="buy_name" />
+          <ScalarProperty Name="buy_address" ColumnName="buy_address" />
+          <ScalarProperty Name="buy_phone" ColumnName="buy_phone" />
+          <ScalarProperty Name="buy_mail" ColumnName="buy_mail" />
+          <ScalarProperty Name="car_type" ColumnName="car_type" />
+          <ScalarProperty Name="car_id1" ColumnName="car_id1" />
+          <ScalarProperty Name="car_id2" ColumnName="car_id2" />
+          <ScalarProperty Name="npoban" ColumnName="npoban" />
+          <ScalarProperty Name="main_remark" ColumnName="main_remark" />
+          <ScalarProperty Name="add_dt" ColumnName="add_dt" />
+          <ScalarProperty Name="add_user" ColumnName="add_user" />
+          <ScalarProperty Name="cancel_date" ColumnName="cancel_date" />
+          <ScalarProperty Name="cancel_time" ColumnName="cancel_time" />
+          <ScalarProperty Name="cancel_reason" ColumnName="cancel_reason" />
+          <ScalarProperty Name="void_date" ColumnName="void_date" />
+          <ScalarProperty Name="void_time" ColumnName="void_time" />
+          <ScalarProperty Name="void_reason" ColumnName="void_reason" />
+          <ScalarProperty Name="reject_date" ColumnName="reject_date" />
+          <ScalarProperty Name="reject_time" ColumnName="reject_time" />
+          <ScalarProperty Name="reject_reason" ColumnName="reject_reason" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EI_INV_MESSAGEQUEUE">
+      <EntityTypeMapping TypeName="einvoiceModel.EI_INV_MESSAGEQUEUE">
+        <MappingFragment StoreEntitySet="EI_INV_MESSAGEQUEUE">
+          <ScalarProperty Name="seq_no" ColumnName="seq_no" />
+          <ScalarProperty Name="msg_kind" ColumnName="msg_kind" />
+          <ScalarProperty Name="send_id" ColumnName="send_id" />
+          <ScalarProperty Name="recv_id" ColumnName="recv_id" />
+          <ScalarProperty Name="inv_no" ColumnName="inv_no" />
+          <ScalarProperty Name="add_dt" ColumnName="add_dt" />
+          <ScalarProperty Name="send_dt" ColumnName="send_dt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EI_INV_PRIZE">
+      <EntityTypeMapping TypeName="einvoiceModel.EI_INV_PRIZE">
+        <MappingFragment StoreEntitySet="EI_INV_PRIZE">
+          <ScalarProperty Name="tax_number" ColumnName="tax_number" />
+          <ScalarProperty Name="inv_ym" ColumnName="inv_ym" />
+          <ScalarProperty Name="inv_no" ColumnName="inv_no" />
+          <ScalarProperty Name="comp_name" ColumnName="comp_name" />
+          <ScalarProperty Name="comp_id" ColumnName="comp_id" />
+          <ScalarProperty Name="comp_address" ColumnName="comp_address" />
+          <ScalarProperty Name="inv_date" ColumnName="inv_date" />
+          <ScalarProperty Name="inv_time" ColumnName="inv_time" />
+          <ScalarProperty Name="inv_amt" ColumnName="inv_amt" />
+          <ScalarProperty Name="car_type" ColumnName="car_type" />
+          <ScalarProperty Name="car_name" ColumnName="car_name" />
+          <ScalarProperty Name="car_id1" ColumnName="car_id1" />
+          <ScalarProperty Name="car_id2" ColumnName="car_id2" />
+          <ScalarProperty Name="random_no" ColumnName="random_no" />
+          <ScalarProperty Name="prize_type" ColumnName="prize_type" />
+          <ScalarProperty Name="prize_amt" ColumnName="prize_amt" />
+          <ScalarProperty Name="buy_id" ColumnName="buy_id" />
+          <ScalarProperty Name="is_deposit" ColumnName="is_deposit" />
+          <ScalarProperty Name="data_type" ColumnName="data_type" />
+          <ScalarProperty Name="exc_code" ColumnName="exc_code" />
+          <ScalarProperty Name="print_format" ColumnName="print_format" />
+          <ScalarProperty Name="identity_code" ColumnName="identity_code" />
+          <ScalarProperty Name="buy_name" ColumnName="buy_name" />
+          <ScalarProperty Name="buy_address" ColumnName="buy_address" />
+          <ScalarProperty Name="buy_phone" ColumnName="buy_phone" />
+          <ScalarProperty Name="buy_mail" ColumnName="buy_mail" />
+          <ScalarProperty Name="print_flag" ColumnName="print_flag" />
+          <ScalarProperty Name="add_dt" ColumnName="add_dt" />
+          <ScalarProperty Name="add_user" ColumnName="add_user" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EI_INV_PROCESSLOG">
+      <EntityTypeMapping TypeName="einvoiceModel.EI_INV_PROCESSLOG">
+        <MappingFragment StoreEntitySet="EI_INV_PROCESSLOG">
+          <ScalarProperty Name="seq_no" ColumnName="seq_no" />
+          <ScalarProperty Name="tax_number" ColumnName="tax_number" />
+          <ScalarProperty Name="inv_no" ColumnName="inv_no" />
+          <ScalarProperty Name="add_dt" ColumnName="add_dt" />
+          <ScalarProperty Name="proc_remark" ColumnName="proc_remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EI_INV_USABLEDATA">
+      <EntityTypeMapping TypeName="einvoiceModel.EI_INV_USABLEDATA">
+        <MappingFragment StoreEntitySet="EI_INV_USABLEDATA">
+          <ScalarProperty Name="tax_number" ColumnName="tax_number" />
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="period" ColumnName="period" />
+          <ScalarProperty Name="header" ColumnName="header" />
+          <ScalarProperty Name="begin_no" ColumnName="begin_no" />
+          <ScalarProperty Name="end_no" ColumnName="end_no" />
+          <ScalarProperty Name="now_no" ColumnName="now_no" />
+          <ScalarProperty Name="format" ColumnName="format" />
+          <ScalarProperty Name="user_account" ColumnName="user_account" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="add_dt" ColumnName="add_dt" />
+          <ScalarProperty Name="add_user" ColumnName="add_user" />
+          <ScalarProperty Name="modify_dt" ColumnName="modify_dt" />
+          <ScalarProperty Name="modify_user" ColumnName="modify_user" />
+          <ScalarProperty Name="is_upload" ColumnName="is_upload" />
+          <ScalarProperty Name="upload_dt" ColumnName="upload_dt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EI_INV_YEARDATA">
+      <EntityTypeMapping TypeName="einvoiceModel.EI_INV_YEARDATA">
+        <MappingFragment StoreEntitySet="EI_INV_YEARDATA">
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="period" ColumnName="period" />
+          <ScalarProperty Name="header" ColumnName="header" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EI_MBR_CARRIER">
+      <EntityTypeMapping TypeName="einvoiceModel.EI_MBR_CARRIER">
+        <MappingFragment StoreEntitySet="EI_MBR_CARRIER">
+          <ScalarProperty Name="card_ban" ColumnName="card_ban" />
+          <ScalarProperty Name="card_no1" ColumnName="card_no1" />
+          <ScalarProperty Name="card_no2" ColumnName="card_no2" />
+          <ScalarProperty Name="token" ColumnName="token" />
+          <ScalarProperty Name="add_dt" ColumnName="add_dt" />
+          <ScalarProperty Name="add_user" ColumnName="add_user" />
+          <ScalarProperty Name="rtn_flag" ColumnName="rtn_flag" />
+          <ScalarProperty Name="rtn_dt" ColumnName="rtn_dt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EI_SYS_ADMINDATA">
+      <EntityTypeMapping TypeName="einvoiceModel.EI_SYS_ADMINDATA">
+        <MappingFragment StoreEntitySet="EI_SYS_ADMINDATA">
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_pwd" ColumnName="user_pwd" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="add_dt" ColumnName="add_dt" />
+          <ScalarProperty Name="modify_dt" ColumnName="modify_dt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EI_SYS_USERDATA">
+      <EntityTypeMapping TypeName="einvoiceModel.EI_SYS_USERDATA">
+        <MappingFragment StoreEntitySet="EI_SYS_USERDATA">
+          <ScalarProperty Name="tax_number" ColumnName="tax_number" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_pwd" ColumnName="user_pwd" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="add_dt" ColumnName="add_dt" />
+          <ScalarProperty Name="add_user" ColumnName="add_user" />
+          <ScalarProperty Name="modify_dt" ColumnName="modify_dt" />
+          <ScalarProperty Name="modify_user" ColumnName="modify_user" />
+          <ScalarProperty Name="is_deleted" ColumnName="is_deleted" />
+          <ScalarProperty Name="delete_dt" ColumnName="delete_dt" />
+          <ScalarProperty Name="delete_user" ColumnName="delete_user" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EI_TNK_SUMMARY">
+      <EntityTypeMapping TypeName="einvoiceModel.EI_TNK_SUMMARY">
+        <MappingFragment StoreEntitySet="EI_TNK_SUMMARY">
+          <ScalarProperty Name="seq_no" ColumnName="seq_no" />
+          <ScalarProperty Name="from_party_id" ColumnName="from_party_id" />
+          <ScalarProperty Name="to_party_id" ColumnName="to_party_id" />
+          <ScalarProperty Name="from_routing_id" ColumnName="from_routing_id" />
+          <ScalarProperty Name="to_routing_id" ColumnName="to_routing_id" />
+          <ScalarProperty Name="uuid" ColumnName="uuid" />
+          <ScalarProperty Name="msg_type" ColumnName="msg_type" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="ref_no" ColumnName="ref_no" />
+          <ScalarProperty Name="inv_date" ColumnName="inv_date" />
+          <ScalarProperty Name="add_dt" ColumnName="add_dt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FROM_CONFIG">
+      <EntityTypeMapping TypeName="einvoiceModel.FROM_CONFIG">
+        <MappingFragment StoreEntitySet="FROM_CONFIG">
+          <ScalarProperty Name="TRANSPORT_ID" ColumnName="TRANSPORT_ID" />
+          <ScalarProperty Name="TRANSPORT_PASSWORD" ColumnName="TRANSPORT_PASSWORD" />
+          <ScalarProperty Name="PARTY_ID" ColumnName="PARTY_ID" />
+          <ScalarProperty Name="PARTY_DESCRIPTION" ColumnName="PARTY_DESCRIPTION" />
+          <ScalarProperty Name="ROUTING_ID" ColumnName="ROUTING_ID" />
+          <ScalarProperty Name="ROUTING_DESCRIPTION" ColumnName="ROUTING_DESCRIPTION" />
+          <ScalarProperty Name="SIGN_ID" ColumnName="SIGN_ID" />
+          <ScalarProperty Name="SUBSTITUTE_PARTY_ID" ColumnName="SUBSTITUTE_PARTY_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SCHEDULE_CONFIG">
+      <EntityTypeMapping TypeName="einvoiceModel.SCHEDULE_CONFIG">
+        <MappingFragment StoreEntitySet="SCHEDULE_CONFIG">
+          <ScalarProperty Name="TASK" ColumnName="TASK" />
+          <ScalarProperty Name="ENABLE" ColumnName="ENABLE" />
+          <ScalarProperty Name="SCHEDULE_TYPE" ColumnName="SCHEDULE_TYPE" />
+          <ScalarProperty Name="SCHEDULE_WEEK" ColumnName="SCHEDULE_WEEK" />
+          <ScalarProperty Name="SCHEDULE_TIME" ColumnName="SCHEDULE_TIME" />
+          <ScalarProperty Name="SCHEDULE_PERIOD" ColumnName="SCHEDULE_PERIOD" />
+          <ScalarProperty Name="SCHEDULE_RANGE" ColumnName="SCHEDULE_RANGE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SIGN_CONFIG">
+      <EntityTypeMapping TypeName="einvoiceModel.SIGN_CONFIG">
+        <MappingFragment StoreEntitySet="SIGN_CONFIG">
+          <ScalarProperty Name="SIGN_ID" ColumnName="SIGN_ID" />
+          <ScalarProperty Name="SIGN_TYPE" ColumnName="SIGN_TYPE" />
+          <ScalarProperty Name="PFX_PATH" ColumnName="PFX_PATH" />
+          <ScalarProperty Name="SIGN_PASSWORD" ColumnName="SIGN_PASSWORD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TASK_CONFIG">
+      <EntityTypeMapping TypeName="einvoiceModel.TASK_CONFIG">
+        <MappingFragment StoreEntitySet="TASK_CONFIG">
+          <ScalarProperty Name="CATEGORY_TYPE" ColumnName="CATEGORY_TYPE" />
+          <ScalarProperty Name="PROCESS_TYPE" ColumnName="PROCESS_TYPE" />
+          <ScalarProperty Name="TASK" ColumnName="TASK" />
+          <ScalarProperty Name="SRC_PATH" ColumnName="SRC_PATH" />
+          <ScalarProperty Name="TARGET_PATH" ColumnName="TARGET_PATH" />
+          <ScalarProperty Name="FILE_FORMAT" ColumnName="FILE_FORMAT" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+          <ScalarProperty Name="ENCODING" ColumnName="ENCODING" />
+          <ScalarProperty Name="TRANS_CHINESE_DATE" ColumnName="TRANS_CHINESE_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TO_CONFIG">
+      <EntityTypeMapping TypeName="einvoiceModel.TO_CONFIG">
+        <MappingFragment StoreEntitySet="TO_CONFIG">
+          <ScalarProperty Name="PARTY_ID" ColumnName="PARTY_ID" />
+          <ScalarProperty Name="PARTY_DESCRIPTION" ColumnName="PARTY_DESCRIPTION" />
+          <ScalarProperty Name="ROUTING_ID" ColumnName="ROUTING_ID" />
+          <ScalarProperty Name="ROUTING_DESCRIPTION" ColumnName="ROUTING_DESCRIPTION" />
+          <ScalarProperty Name="FROM_PARTY_ID" ColumnName="FROM_PARTY_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TURNKEY_MESSAGE_LOG">
+      <EntityTypeMapping TypeName="einvoiceModel.TURNKEY_MESSAGE_LOG">
+        <MappingFragment StoreEntitySet="TURNKEY_MESSAGE_LOG">
+          <ScalarProperty Name="SEQNO" ColumnName="SEQNO" />
+          <ScalarProperty Name="SUBSEQNO" ColumnName="SUBSEQNO" />
+          <ScalarProperty Name="UUID" ColumnName="UUID" />
+          <ScalarProperty Name="MESSAGE_TYPE" ColumnName="MESSAGE_TYPE" />
+          <ScalarProperty Name="CATEGORY_TYPE" ColumnName="CATEGORY_TYPE" />
+          <ScalarProperty Name="PROCESS_TYPE" ColumnName="PROCESS_TYPE" />
+          <ScalarProperty Name="FROM_PARTY_ID" ColumnName="FROM_PARTY_ID" />
+          <ScalarProperty Name="TO_PARTY_ID" ColumnName="TO_PARTY_ID" />
+          <ScalarProperty Name="MESSAGE_DTS" ColumnName="MESSAGE_DTS" />
+          <ScalarProperty Name="CHARACTER_COUNT" ColumnName="CHARACTER_COUNT" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="IN_OUT_BOUND" ColumnName="IN_OUT_BOUND" />
+          <ScalarProperty Name="FROM_ROUTING_ID" ColumnName="FROM_ROUTING_ID" />
+          <ScalarProperty Name="TO_ROUTING_ID" ColumnName="TO_ROUTING_ID" />
+          <ScalarProperty Name="INVOICE_IDENTIFIER" ColumnName="INVOICE_IDENTIFIER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TURNKEY_MESSAGE_LOG_DETAIL">
+      <EntityTypeMapping TypeName="einvoiceModel.TURNKEY_MESSAGE_LOG_DETAIL">
+        <MappingFragment StoreEntitySet="TURNKEY_MESSAGE_LOG_DETAIL">
+          <ScalarProperty Name="SEQNO" ColumnName="SEQNO" />
+          <ScalarProperty Name="SUBSEQNO" ColumnName="SUBSEQNO" />
+          <ScalarProperty Name="PROCESS_DTS" ColumnName="PROCESS_DTS" />
+          <ScalarProperty Name="TASK" ColumnName="TASK" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="FILENAME" ColumnName="FILENAME" />
+          <ScalarProperty Name="UUID" ColumnName="UUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TURNKEY_SEQUENCE">
+      <EntityTypeMapping TypeName="einvoiceModel.TURNKEY_SEQUENCE">
+        <MappingFragment StoreEntitySet="TURNKEY_SEQUENCE">
+          <ScalarProperty Name="SEQUENCE" ColumnName="SEQUENCE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TURNKEY_SYSEVENT_LOG">
+      <EntityTypeMapping TypeName="einvoiceModel.TURNKEY_SYSEVENT_LOG">
+        <MappingFragment StoreEntitySet="TURNKEY_SYSEVENT_LOG">
+          <ScalarProperty Name="EVENTDTS" ColumnName="EVENTDTS" />
+          <ScalarProperty Name="PARTY_ID" ColumnName="PARTY_ID" />
+          <ScalarProperty Name="SEQNO" ColumnName="SEQNO" />
+          <ScalarProperty Name="SUBSEQNO" ColumnName="SUBSEQNO" />
+          <ScalarProperty Name="ERRORCODE" ColumnName="ERRORCODE" />
+          <ScalarProperty Name="UUID" ColumnName="UUID" />
+          <ScalarProperty Name="INFORMATION1" ColumnName="INFORMATION1" />
+          <ScalarProperty Name="INFORMATION2" ColumnName="INFORMATION2" />
+          <ScalarProperty Name="INFORMATION3" ColumnName="INFORMATION3" />
+          <ScalarProperty Name="MESSAGE1" ColumnName="MESSAGE1" />
+          <ScalarProperty Name="MESSAGE2" ColumnName="MESSAGE2" />
+          <ScalarProperty Name="MESSAGE3" ColumnName="MESSAGE3" />
+          <ScalarProperty Name="MESSAGE4" ColumnName="MESSAGE4" />
+          <ScalarProperty Name="MESSAGE5" ColumnName="MESSAGE5" />
+          <ScalarProperty Name="MESSAGE6" ColumnName="MESSAGE6" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TURNKEY_TRANSPORT_CONFIG">
+      <EntityTypeMapping TypeName="einvoiceModel.TURNKEY_TRANSPORT_CONFIG">
+        <MappingFragment StoreEntitySet="TURNKEY_TRANSPORT_CONFIG">
+          <ScalarProperty Name="TRANSPORT_ID" ColumnName="TRANSPORT_ID" />
+          <ScalarProperty Name="TRANSPORT_PASSWORD" ColumnName="TRANSPORT_PASSWORD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TURNKEY_USER_PROFILE">
+      <EntityTypeMapping TypeName="einvoiceModel.TURNKEY_USER_PROFILE">
+        <MappingFragment StoreEntitySet="TURNKEY_USER_PROFILE">
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="USER_PASSWORD" ColumnName="USER_PASSWORD" />
+          <ScalarProperty Name="USER_ROLE" ColumnName="USER_ROLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EI_SYS_LOG">
+      <EntityTypeMapping TypeName="einvoiceModel.EI_SYS_LOG">
+        <MappingFragment StoreEntitySet="EI_SYS_LOG">
+          <ScalarProperty Name="log_time" ColumnName="log_time" />
+          <ScalarProperty Name="contents" ColumnName="contents" />
+          <ScalarProperty Name="action" ColumnName="action" />
+          <ScalarProperty Name="controller" ColumnName="controller" />
+          <ScalarProperty Name="project_name" ColumnName="project_name" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="tax_number" ColumnName="tax_number" />
+          <ScalarProperty Name="sn" ColumnName="sn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EI_SYS_STATUS">
+      <EntityTypeMapping TypeName="einvoiceModel.EI_SYS_STATUS">
+        <MappingFragment StoreEntitySet="EI_SYS_STATUS">
+          <ScalarProperty Name="msg" ColumnName="msg" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="typename" ColumnName="typename" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

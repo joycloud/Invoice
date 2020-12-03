@@ -1,0 +1,8 @@
+===========================檢查欄位[15:14:02]=============================
+[Message]:  
+最符合的多載方法 'decimal.Parse(string)' 有一些無效的引數[StackTrace]:  
+   於 CallSite.Target(Closure , CallSite , Type , Object )
+   於 System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   於 CEINV_API.Controllers.InvoiceController.ColumnsCheck(Object DataObject, String id, String user) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 300[data]:  
+{"InvoiceNumber":"CB00006022","InvoiceDate":"20200904","InvoiceTime":"15:03:40","BuyerIdentifier":"","BuyerName":"test","BuyerAddress":"","BuyerTelephoneNumber":"","BuyerEmailAddress":"","SalesAmount":"120","FreeTaxSalesAmount":"0","ZeroTaxSalesAmount":"0","TaxType":1,"TaxRate":0.05,"TaxAmount":0,"TotalAmount":120.0,"CustomsClearanceMark":"","MainRemark":"","NPOBAN":"","Details":[{"Description":"pen","Quantity":2,"UnitPrice":31.0,"Amount":62,"Remark":"","TaxType":1},{"Description":"測試1","Quantity":2,"UnitPrice":12.0,"Amount":24,"Remark":"","TaxType":1},{"Description":"測試2","Quantity":1,"UnitPrice":34.0,"Amount":34,"Remark":"","TaxType":1}]}
+

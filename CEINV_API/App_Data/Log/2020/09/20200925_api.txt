@@ -1,0 +1,6 @@
+===========================Cancellation[09:29:32]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>Cancellation
+ [api_params]: 
+[{"InvoiceNumber":"CB00006018","InvoiceDate":"20200904"}]
+

@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="einvoiceModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="EI_BAS_COMPANY">
+    <Key>
+      <PropertyRef Name="tax_number" />
+    </Key>
+    <Property Name="tax_number" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="comp_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="comp_sname" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="comp_person" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="comp_tel" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="comp_fax" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="comp_address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="comp_email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="cons_notice" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="lock_up_inv" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="seed_password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="aes_key" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="logo_image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="invoice_image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="cont_person" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cont_phone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="cont_email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="add_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="add_user" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="modify_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="modify_user" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="EI_BRC_DETAILDATA">
+    <Key>
+      <PropertyRef Name="tax_number" />
+      <PropertyRef Name="yearmonth" />
+      <PropertyRef Name="branch_id" />
+      <PropertyRef Name="seq_no" />
+    </Key>
+    <Property Name="tax_number" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="yearmonth" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="branch_id" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="seq_no" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="branch_tax_no" Type="String" MaxLength="9" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="header" Type="String" MaxLength="2" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="begin_no" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="end_no" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="booklet" Type="Int16" Nullable="false" />
+    <Property Name="inv_type" Type="String" MaxLength="2" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="add_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="add_user" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EI_BRC_MASTERDATA">
+    <Key>
+      <PropertyRef Name="tax_number" />
+      <PropertyRef Name="yearmonth" />
+    </Key>
+    <Property Name="tax_number" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="yearmonth" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="header" Type="String" MaxLength="2" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="begin_no" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="end_no" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="inv_type" Type="String" MaxLength="2" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="add_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="add_user" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EI_DIS_DETAILDATA">
+    <Key>
+      <PropertyRef Name="tax_number" />
+      <PropertyRef Name="dis_no" />
+      <PropertyRef Name="seq_no" />
+    </Key>
+    <Property Name="tax_number" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="dis_no" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="seq_no" Type="Int16" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="quantity" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="unit_price" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="amount" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="tax" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="tax_type" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EI_DIS_MASTERDATA">
+    <Key>
+      <PropertyRef Name="tax_number" />
+      <PropertyRef Name="dis_no" />
+    </Key>
+    <Property Name="tax_number" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="dis_no" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="dis_date" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="inv_no" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="inv_date" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="dis_kind" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="dis_type" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="dis_status" Type="String" MaxLength="2" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="is_mailed" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="batch_no" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="tax_amt" Type="Decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="total_amt" Type="Decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="buy_id" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="buy_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="buy_address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="buy_phone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="buy_mail" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="add_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="add_user" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cancel_date" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="cancel_time" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="cancel_reason" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="EI_DIS_MESSAGEQUEUE">
+    <Key>
+      <PropertyRef Name="seq_no" />
+    </Key>
+    <Property Name="seq_no" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="msg_kind" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="send_id" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="recv_id" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="dis_no" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="add_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="send_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="EI_DIS_PROCESSLOG">
+    <Key>
+      <PropertyRef Name="seq_no" />
+    </Key>
+    <Property Name="seq_no" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tax_number" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="dis_no" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="add_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="proc_remark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EI_ERR_MESSAGE">
+    <Key>
+      <PropertyRef Name="code" />
+    </Key>
+    <Property Name="code" Type="String" MaxLength="4" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="message" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="EI_INV_DETAILDATA">
+    <Key>
+      <PropertyRef Name="tax_number" />
+      <PropertyRef Name="inv_no" />
+      <PropertyRef Name="seq_no" />
+    </Key>
+    <Property Name="tax_number" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="inv_no" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="seq_no" Type="Int16" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="quantity" Type="Decimal" Precision="8" Scale="2" Nullable="false" />
+    <Property Name="unit_price" Type="Decimal" Precision="8" Scale="2" Nullable="false" />
+    <Property Name="amount" Type="Decimal" Precision="8" Scale="2" Nullable="false" />
+    <Property Name="detail_remark" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="tax" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="tax_type" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="EI_INV_MASTERDATA">
+    <Key>
+      <PropertyRef Name="tax_number" />
+      <PropertyRef Name="inv_no" />
+    </Key>
+    <Property Name="tax_number" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="inv_no" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="inv_date" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="inv_time" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="inv_type" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="inv_status" Type="String" MaxLength="2" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="is_mailed" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="batch_no" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="serial_no" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="random_no" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="tax_type" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="tax_rate" Type="Decimal" Precision="8" Scale="2" Nullable="false" />
+    <Property Name="tax_amt" Type="Decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="taxable_amt" Type="Decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="freetax_amt" Type="Decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="zerotax_amt" Type="Decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="total_amt" Type="Decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="print_flag" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="pass_way" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="buy_id" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="buy_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="buy_address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="buy_phone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="buy_mail" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="car_type" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="car_id1" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="car_id2" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="npoban" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="main_remark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="add_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="add_user" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cancel_date" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="cancel_time" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="cancel_reason" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="void_date" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="void_time" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="void_reason" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="reject_date" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="reject_time" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="reject_reason" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="inv_class" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="EI_INV_MESSAGEQUEUE">
+    <Key>
+      <PropertyRef Name="seq_no" />
+    </Key>
+    <Property Name="seq_no" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="msg_kind" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="send_id" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="recv_id" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="inv_no" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="add_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="send_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="EI_INV_PRIZE">
+    <Key>
+      <PropertyRef Name="tax_number" />
+      <PropertyRef Name="inv_ym" />
+      <PropertyRef Name="inv_no" />
+    </Key>
+    <Property Name="tax_number" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="inv_ym" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="inv_no" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="comp_name" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="comp_id" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="comp_address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="inv_date" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="inv_time" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="inv_amt" Type="Decimal" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="car_type" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="car_name" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="car_id1" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="car_id2" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="random_no" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="prize_type" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="prize_amt" Type="Decimal" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="buy_id" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="is_deposit" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="data_type" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="exc_code" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="print_format" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="identity_code" Type="String" MaxLength="24" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="buy_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="buy_address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="buy_phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="buy_mail" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="print_flag" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="add_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="add_user" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="EI_INV_PROCESSLOG">
+    <Key>
+      <PropertyRef Name="seq_no" />
+    </Key>
+    <Property Name="seq_no" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tax_number" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="inv_no" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="add_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="proc_remark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EI_INV_USABLEDATA">
+    <Key>
+      <PropertyRef Name="tax_number" />
+      <PropertyRef Name="year" />
+      <PropertyRef Name="period" />
+      <PropertyRef Name="header" />
+      <PropertyRef Name="begin_no" />
+      <PropertyRef Name="end_no" />
+    </Key>
+    <Property Name="tax_number" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="year" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="period" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="header" Type="String" MaxLength="2" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="begin_no" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="end_no" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="now_no" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="format" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="user_account" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="status" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="sort" Type="Int16" Nullable="false" />
+    <Property Name="remark" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="add_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="add_user" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="modify_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="modify_user" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="is_upload" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="upload_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="EI_INV_YEARDATA">
+    <Key>
+      <PropertyRef Name="year" />
+      <PropertyRef Name="period" />
+      <PropertyRef Name="header" />
+    </Key>
+    <Property Name="year" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="period" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="header" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EI_MBR_CARRIER">
+    <Key>
+      <PropertyRef Name="card_ban" />
+      <PropertyRef Name="card_no1" />
+      <PropertyRef Name="card_no2" />
+      <PropertyRef Name="token" />
+    </Key>
+    <Property Name="card_ban" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="card_no1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="card_no2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="token" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="add_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="add_user" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="rtn_flag" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="rtn_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="EI_SYS_ADMINDATA">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="user_pwd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="user_name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="add_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="modify_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="EI_SYS_USERDATA">
+    <Key>
+      <PropertyRef Name="tax_number" />
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="tax_number" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="user_id" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="user_pwd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="user_name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="add_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="add_user" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="modify_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="modify_user" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="is_deleted" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="delete_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="delete_user" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="EI_TNK_SUMMARY">
+    <Key>
+      <PropertyRef Name="seq_no" />
+    </Key>
+    <Property Name="seq_no" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="from_party_id" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="to_party_id" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="from_routing_id" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="to_routing_id" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="uuid" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="msg_type" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="status" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ref_no" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="inv_date" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="add_dt" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FROM_CONFIG">
+    <Key>
+      <PropertyRef Name="PARTY_ID" />
+    </Key>
+    <Property Name="TRANSPORT_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TRANSPORT_PASSWORD" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="PARTY_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PARTY_DESCRIPTION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ROUTING_ID" Type="String" MaxLength="39" FixedLength="false" Unicode="false" />
+    <Property Name="ROUTING_DESCRIPTION" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="SIGN_ID" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="SUBSTITUTE_PARTY_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SCHEDULE_CONFIG">
+    <Key>
+      <PropertyRef Name="TASK" />
+    </Key>
+    <Property Name="TASK" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ENABLE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="SCHEDULE_TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SCHEDULE_WEEK" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="SCHEDULE_TIME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SCHEDULE_PERIOD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SCHEDULE_RANGE" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SIGN_CONFIG">
+    <Key>
+      <PropertyRef Name="SIGN_ID" />
+    </Key>
+    <Property Name="SIGN_ID" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SIGN_TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="PFX_PATH" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SIGN_PASSWORD" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TASK_CONFIG">
+    <Key>
+      <PropertyRef Name="CATEGORY_TYPE" />
+      <PropertyRef Name="PROCESS_TYPE" />
+      <PropertyRef Name="TASK" />
+    </Key>
+    <Property Name="CATEGORY_TYPE" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PROCESS_TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TASK" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SRC_PATH" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="TARGET_PATH" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="FILE_FORMAT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="VERSION" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="ENCODING" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="TRANS_CHINESE_DATE" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TO_CONFIG">
+    <Key>
+      <PropertyRef Name="PARTY_ID" />
+    </Key>
+    <Property Name="PARTY_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PARTY_DESCRIPTION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ROUTING_ID" Type="String" MaxLength="39" FixedLength="false" Unicode="false" />
+    <Property Name="ROUTING_DESCRIPTION" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="FROM_PARTY_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TURNKEY_MESSAGE_LOG">
+    <Key>
+      <PropertyRef Name="SEQNO" />
+      <PropertyRef Name="SUBSEQNO" />
+    </Key>
+    <Property Name="SEQNO" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SUBSEQNO" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UUID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="MESSAGE_TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CATEGORY_TYPE" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="PROCESS_TYPE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="FROM_PARTY_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TO_PARTY_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="MESSAGE_DTS" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+    <Property Name="CHARACTER_COUNT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="STATUS" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="IN_OUT_BOUND" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="FROM_ROUTING_ID" Type="String" MaxLength="39" FixedLength="false" Unicode="false" />
+    <Property Name="TO_ROUTING_ID" Type="String" MaxLength="39" FixedLength="false" Unicode="false" />
+    <Property Name="INVOICE_IDENTIFIER" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TURNKEY_MESSAGE_LOG_DETAIL">
+    <Key>
+      <PropertyRef Name="SEQNO" />
+      <PropertyRef Name="SUBSEQNO" />
+      <PropertyRef Name="TASK" />
+    </Key>
+    <Property Name="SEQNO" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SUBSEQNO" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PROCESS_DTS" Type="String" MaxLength="17" FixedLength="false" Unicode="false" />
+    <Property Name="TASK" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="STATUS" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="FILENAME" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="UUID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TURNKEY_SEQUENCE">
+    <Key>
+      <PropertyRef Name="SEQUENCE" />
+    </Key>
+    <Property Name="SEQUENCE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TURNKEY_SYSEVENT_LOG">
+    <Key>
+      <PropertyRef Name="EVENTDTS" />
+    </Key>
+    <Property Name="EVENTDTS" Type="String" MaxLength="17" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PARTY_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SEQNO" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="SUBSEQNO" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="ERRORCODE" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="UUID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="INFORMATION1" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="INFORMATION2" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="INFORMATION3" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="MESSAGE1" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="MESSAGE2" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="MESSAGE3" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="MESSAGE4" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="MESSAGE5" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="MESSAGE6" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TURNKEY_TRANSPORT_CONFIG">
+    <Key>
+      <PropertyRef Name="TRANSPORT_ID" />
+      <PropertyRef Name="TRANSPORT_PASSWORD" />
+    </Key>
+    <Property Name="TRANSPORT_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TRANSPORT_PASSWORD" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TURNKEY_USER_PROFILE">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+      <PropertyRef Name="USER_PASSWORD" />
+    </Key>
+    <Property Name="USER_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USER_PASSWORD" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USER_ROLE" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="einvoiceEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EI_BAS_COMPANY" EntityType="Self.EI_BAS_COMPANY" />
+    <EntitySet Name="EI_BRC_DETAILDATA" EntityType="Self.EI_BRC_DETAILDATA" />
+    <EntitySet Name="EI_BRC_MASTERDATA" EntityType="Self.EI_BRC_MASTERDATA" />
+    <EntitySet Name="EI_DIS_DETAILDATA" EntityType="Self.EI_DIS_DETAILDATA" />
+    <EntitySet Name="EI_DIS_MASTERDATA" EntityType="Self.EI_DIS_MASTERDATA" />
+    <EntitySet Name="EI_DIS_MESSAGEQUEUE" EntityType="Self.EI_DIS_MESSAGEQUEUE" />
+    <EntitySet Name="EI_DIS_PROCESSLOG" EntityType="Self.EI_DIS_PROCESSLOG" />
+    <EntitySet Name="EI_ERR_MESSAGE" EntityType="Self.EI_ERR_MESSAGE" />
+    <EntitySet Name="EI_INV_DETAILDATA" EntityType="Self.EI_INV_DETAILDATA" />
+    <EntitySet Name="EI_INV_MASTERDATA" EntityType="Self.EI_INV_MASTERDATA" />
+    <EntitySet Name="EI_INV_MESSAGEQUEUE" EntityType="Self.EI_INV_MESSAGEQUEUE" />
+    <EntitySet Name="EI_INV_PRIZE" EntityType="Self.EI_INV_PRIZE" />
+    <EntitySet Name="EI_INV_PROCESSLOG" EntityType="Self.EI_INV_PROCESSLOG" />
+    <EntitySet Name="EI_INV_USABLEDATA" EntityType="Self.EI_INV_USABLEDATA" />
+    <EntitySet Name="EI_INV_YEARDATA" EntityType="Self.EI_INV_YEARDATA" />
+    <EntitySet Name="EI_MBR_CARRIER" EntityType="Self.EI_MBR_CARRIER" />
+    <EntitySet Name="EI_SYS_ADMINDATA" EntityType="Self.EI_SYS_ADMINDATA" />
+    <EntitySet Name="EI_SYS_USERDATA" EntityType="Self.EI_SYS_USERDATA" />
+    <EntitySet Name="EI_TNK_SUMMARY" EntityType="Self.EI_TNK_SUMMARY" />
+    <EntitySet Name="FROM_CONFIG" EntityType="Self.FROM_CONFIG" />
+    <EntitySet Name="SCHEDULE_CONFIG" EntityType="Self.SCHEDULE_CONFIG" />
+    <EntitySet Name="SIGN_CONFIG" EntityType="Self.SIGN_CONFIG" />
+    <EntitySet Name="TASK_CONFIG" EntityType="Self.TASK_CONFIG" />
+    <EntitySet Name="TO_CONFIG" EntityType="Self.TO_CONFIG" />
+    <EntitySet Name="TURNKEY_MESSAGE_LOG" EntityType="Self.TURNKEY_MESSAGE_LOG" />
+    <EntitySet Name="TURNKEY_MESSAGE_LOG_DETAIL" EntityType="Self.TURNKEY_MESSAGE_LOG_DETAIL" />
+    <EntitySet Name="TURNKEY_SEQUENCE" EntityType="Self.TURNKEY_SEQUENCE" />
+    <EntitySet Name="TURNKEY_SYSEVENT_LOG" EntityType="Self.TURNKEY_SYSEVENT_LOG" />
+    <EntitySet Name="TURNKEY_TRANSPORT_CONFIG" EntityType="Self.TURNKEY_TRANSPORT_CONFIG" />
+    <EntitySet Name="TURNKEY_USER_PROFILE" EntityType="Self.TURNKEY_USER_PROFILE" />
+    <EntitySet Name="EI_SYS_LOG" EntityType="einvoiceModel.EI_SYS_LOG" />
+    <EntitySet Name="EI_SYS_STATUS" EntityType="einvoiceModel.EI_SYS_STATUS" />
+  </EntityContainer>
+  <EntityType Name="EI_SYS_LOG">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tax_number" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="user_id" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="project_name" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="controller" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="action" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Name="contents" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="log_time" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="EI_SYS_STATUS">
+    <Key>
+      <PropertyRef Name="typename" />
+      <PropertyRef Name="code" />
+    </Key>
+    <Property Name="typename" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="code" Type="Int32" Nullable="false" />
+    <Property Name="msg" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

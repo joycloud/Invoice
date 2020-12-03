@@ -1,0 +1,30 @@
+===========================GetTrackStatus[09:25:56]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>GetTrackStatus
+ [api_params]: 
+{"id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","year":2020,"period":4,"status":2}
+
+===========================GetTrackStatus[09:26:52]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>GetTrackStatus
+ [api_params]: 
+{"id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","year":2020,"period":4,"status":3}
+
+===========================GetTrackStatus[09:33:15]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>GetTrackStatus
+ [api_params]: 
+{"id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","year":2020,"period":4,"status":1}
+
+===========================GetTrackStatus[15:20:03]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>GetTrackStatus
+ [api_params]: 
+{"id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","year":0,"period":0,"status":0}
+
+===========================GetTrackStatus[15:20:31]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>GetTrackStatus
+ [api_params]: 
+{"id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","year":0,"period":0,"status":0}
+

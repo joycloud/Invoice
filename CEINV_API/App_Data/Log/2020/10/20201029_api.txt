@@ -1,0 +1,42 @@
+===========================InvoicePDF[10:49:04]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>InvoicePDF
+ [api_params]: 
+{"id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","invoice":"CB00010088","type":1}
+
+===========================InvoicePDF[10:50:12]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>InvoicePDF
+ [api_params]: 
+{"id":"10287643","user":"10287643","passwd":"MXFhejJ3c3g=","invoice":"CB00010088","type":1}
+
+===========================InvoicePDF[10:50:54]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>InvoicePDF
+ [api_params]: 
+{"id":"10287643","user":"10287643","passwd":"MXFhejJ3c3g=","invoice":"CB00010088","type":1}
+
+===========================InvoicePDF[10:56:18]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>InvoicePDF
+ [api_params]: 
+{"id":"10287643","user":"10287643","passwd":"MXFhejJ3c3g=","invoice":"CB00010088","type":1}
+
+===========================InvoicePDF[10:58:55]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>InvoicePDF
+ [api_params]: 
+{"id":"10287643","user":"10287643","passwd":"MXFhejJ3c3g=","invoice":"CB00010088","type":1}
+
+===========================InvoicePDF[10:59:25]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>InvoicePDF
+ [api_params]: 
+{"id":"10287643","user":"10287643","passwd":"MXFhejJ3c3g=","invoice":"CB00010088","type":1}
+
+===========================InvoicePDF[11:01:41]=============================
+ [from_ip]:  192.168.64.127
+ [api_name]:  InvoiceController=>InvoicePDF
+ [api_params]: 
+{"id":"10287643","user":"10287643","passwd":"MXFhejJ3c3g=","invoice":"CB00010088","type":1}
+

@@ -1,0 +1,203 @@
+===========================Invalid-丟入table[13:36:19]=============================
+[Message]:  
+輸入字串格式不正確。
+[StackTrace]:  
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1318
+[data]:  
+{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+
+===========================Invalid-丟入table[13:37:34]=============================
+[Message]:  
+輸入字串格式不正確。
+[StackTrace]:  
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1318
+[data]:  
+{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+
+===========================Invalid-丟入table[13:39:27]=============================
+[Message]:  
+輸入字串格式不正確。
+[StackTrace]:  
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1318
+[data]:  
+{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+
+===========================Invalid-丟入table[13:41:12]=============================
+[Message]:  
+輸入字串格式不正確。
+[StackTrace]:  
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1318
+[data]:  
+{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+
+===========================Invalid-丟入table[13:42:41]=============================
+[Message]:  
+輸入字串格式不正確。
+[StackTrace]:  
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1321
+[data]:  
+{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+
+===========================Invalid-丟入table[13:54:27]=============================
+[Message]:  
+輸入字串格式不正確。
+[StackTrace]:  
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1324
+[data]:  
+{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+
+===========================Invalid-丟入table[14:14:17]=============================
+[Message]:輸入字串格式不正確。[StackTrace]:   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1324[data]:{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+
+===========================Invalid-丟入table[14:16:16]=============================
+[Message]:輸入字串格式不正確。[StackTrace]:   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1324[data]:{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+
+===========================Invalid-丟入table[14:22:06]=============================
+[Message]:輸入字串格式不正確。[StackTrace]:   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1324[data]:{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+
+===========================Invalid-丟入table[14:23:50]=============================
+[Message]:輸入字串格式不正確。[StackTrace]:   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1340[data]:{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+
+===========================Invalid-丟入table[14:24:30]=============================
+[Message]:輸入字串格式不正確。[StackTrace]:   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1340[data]:{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+
+===========================Invalid-丟入table[14:28:44]=============================
+[Message]:輸入字串格式不正確。[StackTrace]:   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1331[data]:{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+
+===========================Invalid-丟入table[14:30:13]=============================
+[Message]:輸入字串格式不正確。[StackTrace]:   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1342[data]:{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+
+===========================Invalid-丟入table[14:37:09]=============================
+[Message]:輸入字串格式不正確。[StackTrace]:   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1342[data]:{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+
+===========================Invalid-丟入table[14:41:12]=============================
+[Message]:輸入字串格式不正確。[StackTrace]:   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1342[data]:{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+
+===========================Invalid-丟入table[14:44:21]=============================
+[Message]:輸入字串格式不正確。[StackTrace]:   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1343[data]:{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+
+===========================Invalid-丟入table[14:47:13]=============================
+[Message]:  
+輸入字串格式不正確。
+[StackTrace]:  
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1329
+[data]:  
+{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+
+===========================Invalid-丟入table[14:48:58]=============================
+[Message]:  
+輸入字串格式不正確。
+[StackTrace]:  
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1329
+[data]:  
+{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+
+===========================Invalid-丟入table[14:50:10]=============================
+[Message]:  
+輸入字串格式不正確。
+[StackTrace]:  
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1329
+[data]:  
+{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+
+===========================Invalid-丟入table[14:51:38]=============================
+[Message]:  
+輸入字串格式不正確。
+[StackTrace]:  
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1329
+[data]:  
+{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+
+===========================Invalid-丟入table[14:52:23]=============================
+[Message]:  
+輸入字串格式不正確。
+[StackTrace]:  
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1329
+[data]:  
+{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+
+===========================Invalid-丟入table[15:02:38]=============================
+[Message]:  
+輸入字串格式不正確。
+[StackTrace]:  
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1329
+[data]:  
+{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+
+===========================Invalid-丟入table[15:04:09]=============================
+[Message]:  
+輸入字串格式不正確。
+[StackTrace]:  
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.Invalid(jsonstring_Invalid responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1329
+[data]:  
+{"action":"C0501","id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","csv":[{"InvoiceNumber":"CB00006038","InvoiceDate":"20200911"}]}
+

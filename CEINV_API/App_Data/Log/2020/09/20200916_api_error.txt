@@ -1,0 +1,22 @@
+===========================GetInvoiceStatusIncsv-取發票資料[10:45:00]=============================
+[Message]:  
+輸入字串格式不正確。
+[StackTrace]:  
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.GetInvoiceStatusIncsv(jsonstring_GetInvoiceStatusIncsv responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1004
+[data]:  
+{"id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","invoice":"CB00006041,CB00006040,CB00006039,CB00006080,CB00006039"}
+
+===========================GetInvoiceStatusIncsv-取發票資料[10:53:17]=============================
+[Message]:  
+輸入字串格式不正確。
+[StackTrace]:  
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_API.Controllers.InvoiceController.GetInvoiceStatusIncsv(jsonstring_GetInvoiceStatusIncsv responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 1004
+[data]:  
+{"id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","invoice":"CB00006041,CB00006040,CB00006039,CB00006080,CB00006039"}
+

@@ -1,0 +1,12 @@
+===========================GetTrackList-取票更新資料[15:04:41]=============================
+[Message]:  
+輸入字串格式不正確。
+[StackTrace]:  
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CEINV_DB.Helper.InvoiceCRUD.Invoice_GetTrackList(String id, Int32 year, String user, Int32 period, Int32 size) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_DB\Helper\InvoiceCRUD.cs: 行 290
+   於 CEINV_API.Controllers.InvoiceController.GetTrackList(jsonstring_GetTrackList responce) 於 C:\Users\joycloud\source\repos\Einvoice_2.0\CEINV_API\Controllers\InvoiceController.cs: 行 813
+[data]:  
+{"id":"28597542","user":"28597542","passwd":"cGF5d2FyZUAhNjg=","year":2020,"period":4,"size":4003}
+

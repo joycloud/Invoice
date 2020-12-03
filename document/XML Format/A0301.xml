@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RejectInvoice xmlns="urn:GEINV:eInvoiceMessage:A0301:3.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<RejectInvoiceNumber></RejectInvoiceNumber>
+	<InvoiceDate></InvoiceDate>
+	<BuyerId></BuyerId>
+	<SellerId></SellerId>
+	<RejectDate></RejectDate>
+	<RejectTime></RejectTime>
+	<RejectReason></RejectReason>
+	<Remark></Remark>
+</RejectInvoice>

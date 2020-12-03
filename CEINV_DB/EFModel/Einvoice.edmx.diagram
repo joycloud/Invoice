@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f31d97e90d4e46028a4d34ae161aea03" Name="Diagram1" ZoomLevel="97">
+        <EntityTypeShape EntityType="einvoiceModel.EI_BAS_COMPANY" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.EI_BRC_DETAILDATA" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.EI_BRC_MASTERDATA" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.EI_DIS_DETAILDATA" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.EI_DIS_MASTERDATA" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.EI_DIS_MESSAGEQUEUE" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.EI_DIS_PROCESSLOG" Width="1.5" PointX="6.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.EI_ERR_MESSAGE" Width="1.5" PointX="6.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.EI_INV_DETAILDATA" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.EI_INV_MASTERDATA" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.EI_INV_MESSAGEQUEUE" Width="1.5" PointX="8.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.EI_INV_PRIZE" Width="1.5" PointX="8.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.EI_INV_PROCESSLOG" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.EI_INV_USABLEDATA" Width="1.5" PointX="2.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.EI_INV_YEARDATA" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.EI_MBR_CARRIER" Width="1.5" PointX="4.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.EI_SYS_ADMINDATA" Width="1.5" PointX="10.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.EI_SYS_USERDATA" Width="1.5" PointX="10.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.EI_TNK_SUMMARY" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.FROM_CONFIG" Width="1.5" PointX="12.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.SCHEDULE_CONFIG" Width="1.5" PointX="12.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.SIGN_CONFIG" Width="1.5" PointX="12.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.TASK_CONFIG" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.TO_CONFIG" Width="1.5" PointX="14.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.TURNKEY_MESSAGE_LOG" Width="1.5" PointX="4.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.TURNKEY_MESSAGE_LOG_DETAIL" Width="1.5" PointX="14.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.TURNKEY_SEQUENCE" Width="1.5" PointX="14.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.TURNKEY_SYSEVENT_LOG" Width="1.5" PointX="14.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.TURNKEY_TRANSPORT_CONFIG" Width="1.5" PointX="10.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.TURNKEY_USER_PROFILE" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="einvoiceModel.EI_SYS_LOG" Width="1.5" PointX="7.375" PointY="16.75" />
+        <EntityTypeShape EntityType="einvoiceModel.EI_SYS_STATUS" Width="1.5" PointX="17.375" PointY="3.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
